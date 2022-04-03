@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#e7e9e8 ;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+
+}
+/* inicio --------------------------------*/
+.inicio{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(32, 15, 15);
+}
+.nav a i{
+    color: rgb(59, 59, 59);
+}
+.contenido-inicio{
+    position: relative;
+    left: 10px;
+    top: 250px;
+    width: 500px;
+    height: 600px;
+
+
+}
+.nombre{
+    color: rgb(241, 10, 10);
+}
+.boton-git{
+    color: rgb(226, 210, 210);
+    border: none;
+    outline: none;
+    background-color: rgb(236, 25, 25);
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-top: 30px;
+    box-shadow: 1px 2px gray;
+    cursor: pointer;
+}
+.boton-git:active{
+    transform: scale(1.07);
+}
+.contenido-inicio p{
+    font-weight: 600;
+}
+
+.foto-inicio{
+    position: relative;
+    top: 190px;
+    left: 50px;
+    width: 300px;
+    height: 390px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px  rgb(185, 183, 183);
+}
+.foto-inicio img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0 0;  
+}
+.redes{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 30px;
+}
+.redes i{
+    color: rgb(32, 15, 15);
+    cursor: pointer;
+}
+/* info -------------------------------- */
+
+.quien-soy{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+.quien-soy .foto-2{
+    position: relative;
+    width: 100%;
+    height:400px ;
+    background-image: url(./foto/img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quien-soy .foto-2::before{
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.quien-soy .foto-2 h1{
+    color: #e7e9e8;
+    font-size: 40px;
+}
+.quien-soy .foto-2 p{
+    color: #e7e9e8;
+}
+.informacion-personal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.informacion-personal .info-div{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.informacion-personal .info-div .tarjeta-1{
+    width: 600px;
+    height: 500px;
+    border-right: 1px solid gray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.informacion-personal .info-div .tarjeta-1 img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgb(206, 202, 202);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 5px;
+}
+.informacion-personal .info-div .tarjeta-1 div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+}
+.informacion-personal .info-div .tarjeta-1 div h1{
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 35px;
+    color: rgb(32, 15, 15);
+}
+.informacion-personal .info-div .tarjeta-1 div p{
+    color: rgb(54, 52, 52);
+    font-weight: 600;
+    margin-left: 10px;
+    border-bottom: 1px solid rgb(219, 215, 215);
+}
+.informacion-personal .info-div .tarjeta-1 div i{
+    font-size: 20px;
+    padding: 0 10px;
+    color: black;
+}
+
+.informacion-personal .info-div .tarjeta-2{
+    width: 500px;
+    text-align:justify;
+
+}
+.informacion-personal .info-div .tarjeta-2 button{
+    color: rgb(226, 210, 210);
+    border: none;
+    outline: none;
+    background-color: rgb(236, 25, 25);
+    padding: 10px 20px;
+    border-radius: 2px;
+    width: 200px;
+    font-weight: 600;
+    margin-top: 10px;
+    box-shadow: 1px 2px gray;
+    cursor: pointer;
+}
+/* skills -------------------------------- */
+
+.skills{
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+.titulo-skill{
+    position: absolute;
+    width: 200px;
+    height: 70px;
+
+}
+.skills h1{
+    text-align: center;
+}
+.skills .logos{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    position: relative;
+    right: -50px;
+}
+.logos img{
+    width: 100px;
+    margin-top: 70px;
+    position: relative;
+    left: -90px;
+    cursor: pointer;
+}
+.logos p{
+    position: relative;
+    left: -90px;
+    top: 5px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background: rgb(53, 52, 52);
+    color: #fff;
+    position: relative;
+ 
+}
+.redes-footer{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.footer .contenido-footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer .contactos{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 90px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1200px){
+    .informacion-personal .info-div .tarjeta-1{
+        border-right: none;
+    }
+    .informacion-personal .info-div .tarjeta-2{
+        width: 400px;
+        text-align:center;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        position:absolute;
+        max-width: 400px;
+    
+    }
+    .titulo-skill{
+        position: relative;
+        width: 300px;
+        height: 70px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .skills .logos{
+
+        right: 30px;
+    }
+    .footer .contenido-footer{
+        display: flex;
+        position: relative;
+        left: 50px;
+        top: 50px;
+        width: 300px;
+        font-size: 11px;
+    }
+    .footer .contactos{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 40px;
+        top: 90px;
+    }
+}
+@media screen and (max-width: 950px){
+
+    .foto-inicio{
+       display: none;
+    }
+
+    .informacion-personal .info-div{
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .titulo-skill{
+        position: relative;
+        width: 400px;
+        height: 70px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media screen and (max-width: 650px){
+    .footer .contactos{
+        display: none;
+    }
+}
